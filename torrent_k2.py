@@ -91,16 +91,6 @@ for page in range(0, pages):
 
 
 
-        #movie_name = detail.find('span', attrs={'class': 'title'}).getText()
-        # 这里用到了getText()方法
-
-        #movie_name_list.append(movie_name)  # 列表中增加影片名称。
-
-
-
-        #content = etree.HTML(html.lower().decode('utf-8'))
-
-    #mags = content.xpath("//a[@rel='magnet']")  # 精确定位标签属性值为‘magnet’的内容
 
 
     #file_name = ks + '_' + page  # 让文件按页码保存，避免一个文件中链接数量太多。
