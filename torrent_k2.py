@@ -69,24 +69,35 @@ for page in range(0, pages):
             #还需要考虑翻页的问题？
             detail = movie_li.find('td', attrs={'class': 'size'}).getText()         #####>>>>>>5     定位所有的size标签，得到字符串。
             #print "%s \n" % detail
-            detail_name1 = movie_li.find('a', attrs={'rel': 'magnet'})['title']
-            FHD_flag=detail_name1.find('FHD')
-            Thz_flag=detail_name1.find('Thz.la')
-            if FHD_flag<>-1 or Thz_flag<>-1:
+            if movie_li.find('a', attrs={'rel': 'magnet'}) is None:
+                pass
+            else:
+
+                detail_name1 = movie_li.find('a', attrs={'rel': 'magnet'})['title']
+                FHD_flag=detail_name1.find('FHD')
+                Thz_flag=detail_name1.find('Thz.la')
+            if FHD_flag<>-1 or Thz_flag<>-1:                                         #####>>>>>>5.1     如果是高清或者是tha.lz那么就存档。
 
 
-            #if detail.find('mb')<>-1:                                               #####>>>>>>6     如果文件大小满足要求，那么下一步寻找兄弟节点。
+            ##if detail.find('mb')<>-1:                                               #####>>>>>>6     如果文件大小满足要求，那么下一步寻找兄弟节点。
                 #文件名称
-                detail_name=movie_li.find('a', attrs={'rel': 'magnet'})['title']
-                print detail_name
+                if movie_li.find('a', attrs={'rel': 'magnet'}) is None:
+                    pass
+                else:
+                    detail_name=movie_li.find('a', attrs={'rel': 'magnet'})['title']
+                    print detail_name
                 # 文件大小  detail
                 print detail
                 #链接地址
-                detail_mag=movie_li.find('a', attrs={'rel': 'magnet'})['href']      #####>>>>>>7     获取磁力链接地址。
-                print detail_mag
                 file_name = ks + '_' + page  # 让文件按页码保存，避免一个文件中链接数量太多。
-                with open(file_name, 'a') as p:  # '''Note'''：Ａppend mode, run only once!
-                    p.write("%s \n \n" % detail_mag)  ##!!encode here to utf-8 to avoid encoding
+                if movie_li.find('a', attrs={'rel': 'magnet'}) is None:                ####>>>>>>>      如果为非空，那么就获取。
+                    pass
+                else:
+                    detail_mag=movie_li.find('a', attrs={'rel': 'magnet'})['href']      #####>>>>>>7     获取磁力链接地址。
+                    print detail_mag
+
+                    with open(file_name, 'a') as p:  # '''Note'''：Ａppend mode, run only once!
+                        p.write("%s \n \n" % detail_mag)  ##!!encode here to utf-8 to avoid encoding
 
 
 
