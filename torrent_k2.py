@@ -33,7 +33,7 @@ keys2x = raw_input("请输入搜索关键字：")
 
 keyword = urllib.quote(keys2x)  # 这是python2的语法
 
-pages = 5
+pages = 40
 
 # os.chdir('/Users/llm/PycharmProjects/')
 
