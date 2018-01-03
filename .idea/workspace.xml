@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16f5b5df-3b6a-4874-8048-ea6ce70aa701" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/torrent_k3.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/torrent_k4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/get_db_to_usefile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pymongo_imp.py" afterPath="$PROJECT_DIR$/pymongo_imp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/torrent_k2.py" afterPath="$PROJECT_DIR$/torrent_k2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/torrent_k4.py" afterPath="$PROJECT_DIR$/torrent_k4.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +19,7 @@
     <SUITE FILE_PATH="coverage/BS_review_py2$BS3_torrent.coverage" NAME="BS3_torrent Coverage Results" MODIFIED="1514776173097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BS_review_py2$torrent_k2.coverage" NAME="torrent_k2 Coverage Results" MODIFIED="1514988667900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BS_review_py2$pymongo_test1.coverage" NAME="pymongo_test1 Coverage Results" MODIFIED="1514986875826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/BS_review_py2$torrent_k4.coverage" NAME="torrent_k4 Coverage Results" MODIFIED="1514992843505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BS_review_py2$torrent_k4.coverage" NAME="torrent_k4 Coverage Results" MODIFIED="1514994711054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BS_review_py2$BS1.coverage" NAME="BS1 Coverage Results" MODIFIED="1514774174532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BS_review_py2$top250.coverage" NAME="top250 Coverage Results" MODIFIED="1514813167567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BS_review_py2$pymongo_imp.coverage" NAME="pymongo_imp Coverage Results" MODIFIED="1514989606112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -43,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/torrent_k2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-180">
-              <caret line="81" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+              <caret line="81" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
               <folding>
                 <marker date="1514987732009" expanded="true" signature="2614:4014" ph="..." />
                 <marker date="1514987732009" expanded="true" signature="2630:2765" ph="..." />
@@ -57,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/torrent_k3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-75">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding>
                 <element signature="e#631#645#0" expanded="true" />
                 <marker date="1514990711908" expanded="true" signature="1042:3711" ph="..." />
@@ -73,12 +71,23 @@
       <file leaf-file-name="torrent_k4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/torrent_k4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding>
                 <element signature="e#671#685#0" expanded="true" />
-                <marker date="1514992743625" expanded="true" signature="3574:3738" ph="..." />
+                <marker date="1514995107954" expanded="true" signature="1956:5507" ph="..." />
+                <marker date="1514995107954" expanded="true" signature="4156:4328" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_db_to_usefile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_db_to_usefile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/pymongo_test1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-243">
-              <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+              <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding>
                 <marker date="1514985215116" expanded="true" signature="48:172" ph="import ..." />
                 <marker date="1514985215116" expanded="true" signature="207:468" ph="..." />
@@ -101,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/pymongo_imp.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
               <folding>
                 <element signature="e#276#384#0" expanded="true" />
                 <marker date="1514992843497" expanded="true" signature="987:1678" ph="..." />
@@ -135,8 +144,9 @@
         <option value="$PROJECT_DIR$/pymongo_test1.py" />
         <option value="$PROJECT_DIR$/torrent_k2.py" />
         <option value="$PROJECT_DIR$/torrent_k3.py" />
-        <option value="$PROJECT_DIR$/torrent_k4.py" />
         <option value="$PROJECT_DIR$/pymongo_imp.py" />
+        <option value="$PROJECT_DIR$/get_db_to_usefile.py" />
+        <option value="$PROJECT_DIR$/torrent_k4.py" />
       </list>
     </option>
   </component>
@@ -329,7 +339,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32006127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4532925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -625,7 +635,7 @@
     <entry file="file://$PROJECT_DIR$/torrent_k2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-180">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <caret line="81" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
             <marker date="1514987732009" expanded="true" signature="2614:4014" ph="..." />
             <marker date="1514987732009" expanded="true" signature="2630:2765" ph="..." />
@@ -637,7 +647,7 @@
     <entry file="file://$PROJECT_DIR$/pymongo_test1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-243">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <caret line="32" column="26" lean-forward="false" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <marker date="1514985215116" expanded="true" signature="48:172" ph="import ..." />
             <marker date="1514985215116" expanded="true" signature="207:468" ph="..." />
@@ -649,7 +659,7 @@
     <entry file="file://$PROJECT_DIR$/torrent_k3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="e#631#645#0" expanded="true" />
             <marker date="1514990711908" expanded="true" signature="1042:3711" ph="..." />
@@ -664,7 +674,7 @@
     <entry file="file://$PROJECT_DIR$/pymongo_imp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
           <folding>
             <element signature="e#276#384#0" expanded="true" />
             <marker date="1514992843497" expanded="true" signature="987:1678" ph="..." />
@@ -674,13 +684,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/get_db_to_usefile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/torrent_k4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
           <folding>
             <element signature="e#671#685#0" expanded="true" />
-            <marker date="1514992743625" expanded="true" signature="3574:3738" ph="..." />
+            <marker date="1514995107954" expanded="true" signature="1956:5507" ph="..." />
+            <marker date="1514995107954" expanded="true" signature="4156:4328" ph="..." />
           </folding>
         </state>
       </provider>
