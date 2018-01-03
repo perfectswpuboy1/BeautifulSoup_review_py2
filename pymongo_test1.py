@@ -1,5 +1,6 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python
+
 
 import pymongo
 import datetime
@@ -7,7 +8,7 @@ import datetime
 
 def get_db():
     # 建立连接
-    client = pymongo.MongoClient(host="10.244.25.180", port=27017)
+    client = pymongo.MongoClient(host="127.0.0.1", port=27017)
     db = client['example']
     #或者 db = client.example
     return db
