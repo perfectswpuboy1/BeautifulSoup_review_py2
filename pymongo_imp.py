@@ -11,6 +11,7 @@
 '''
 import pymongo             #导入pymongo模块         。PS：让py2.7安装pymongo的命令是 pip2 install  ,相应的让3安装就是pip3 install
 import datetime            #导入时间模块
+import re
 
 def get_db():
     # 建立连接
@@ -41,6 +42,24 @@ def insert_one_doc(db,file_name0,filesize0,magnet0):
         print "数据库已经有该文件。忽略!"
         pass
         #print "else"
+
+def get_many_docs(db,find_key):
+    # mongo中提供了过滤查找的方法，可以通过各种条件筛选来获取数据集，还可以对数据进行计数，排序等处理
+    coll = db['informations']
+    #ASCENDING = 1 升序;DESCENDING = -1降序;default is ASCENDING
+    item_list=[]
+    for item in coll.find({"Vedio_name":re.compile(find_key)}).sort("Vedio_name", pymongo.DESCENDING):
+        print item
+        item_list.append(item)
+
+    count = coll.count()
+    print "集合中所有数据 %s个" % int(count)
+    return item_list
+
+    #条件查询
+    #count = coll.find({"name":"quyang"}).count()
+    #print "quyang: %s"%count
+
 
 if __name__ == '__main__':
     print "Please use it by import!"
