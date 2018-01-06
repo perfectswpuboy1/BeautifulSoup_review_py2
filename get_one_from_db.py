@@ -4,7 +4,7 @@
 '''
 import codecs
 import requests
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 import pymongo_imp
 
 
