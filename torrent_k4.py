@@ -30,14 +30,15 @@ import pymongo_imp
 #[明日花][神咲詩織][天海翼][市来美保][吉沢明歩][仁科百華][Julia][SSNI][Rion][明日花绮罗][桃谷绘里香][冲田杏梨][大桥未久][AIKA]
 
 #search_list=['SNIS','MIRD','MILD','PPPD','DPMI','HEYZO','IPTD','MIGD','carib','MXGS','MIAD','WANZ','E-BODY','ONSD','SOE','LAFBD','MIDD','Moodyz','MCB3DBD','JUFD','MIDE','DPMX','HODV','MIDD','明日花','神咲詩織','天海翼','市来美保','吉沢明歩','仁科百華','Julia','SSNI','Rion','明日花绮罗','桃谷绘里香','冲田杏梨','大桥未久','AIKA']
-search_list=['HEYZO','IPTD','MIGD','carib','MXGS','MIAD','WANZ','E-BODY','ONSD','SOE','LAFBD','MIDD','Moodyz','MCB3DBD','JUFD','MIDE','DPMX','HODV','MIDD','明日花','神咲詩織','天海翼','市来美保','吉沢明歩','仁科百華','Julia','SSNI','Rion','明日花绮罗','桃谷绘里香','冲田杏梨','大桥未久','AIKA']
-
+#search_list=['HEYZO','IPTD','MIGD','carib','MXGS','MIAD','WANZ','E-BODY','ONSD','SOE','LAFBD','MIDD','Moodyz','MCB3DBD','JUFD','MIDE','DPMX','HODV','MIDD','明日花','神咲詩織','天海翼','市来美保','吉沢明歩','仁科百華','Julia','SSNI','Rion','明日花绮罗','桃谷绘里香','冲田杏梨','大桥未久','AIKA']
+#search_list=['IPZ','IPX','IDBD','IPX','AVOP','IPX','SHKD','SSPD','RBD','OFJE','MXSPS','MIBD','SUPD','KAWD','PPT','ABP','PPBD','PBD','BLK','MKMP','JUX','SVDVD']
+search_list=['1pon']
 for keys2x in search_list:
 
     url = 'https://www.torrentkitty.tv/search/'
 #    keys2x = raw_input("请输入搜索关键字：")
     keyword = urllib.quote(keys2x)  # 这是python2的语法
-    pages = 60
+    pages = 300
     file_name = '/Users/llm/PycharmProjects/' + keys2x + '.txt'
     ks = file_name
     for page in range(0, pages):
