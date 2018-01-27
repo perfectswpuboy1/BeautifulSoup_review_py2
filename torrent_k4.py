@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
+    注意：本代码会加入数据库！！！
+
     一定要注意从网上粘贴过来的代码需要重新调整一下缩进！！！
     本代码是python2的代码，python3不适用。
     #任务1:筛选文件大小满足条件的文件                                              <<<<<<OK!>>>>>>
@@ -32,7 +34,7 @@ import pymongo_imp
 #search_list=['SNIS','MIRD','MILD','PPPD','DPMI','HEYZO','IPTD','MIGD','carib','MXGS','MIAD','WANZ','E-BODY','ONSD','SOE','LAFBD','MIDD','Moodyz','MCB3DBD','JUFD','MIDE','DPMX','HODV','MIDD','明日花','神咲詩織','天海翼','市来美保','吉沢明歩','仁科百華','Julia','SSNI','Rion','明日花绮罗','桃谷绘里香','冲田杏梨','大桥未久','AIKA']
 #search_list=['HEYZO','IPTD','MIGD','carib','MXGS','MIAD','WANZ','E-BODY','ONSD','SOE','LAFBD','MIDD','Moodyz','MCB3DBD','JUFD','MIDE','DPMX','HODV','MIDD','明日花','神咲詩織','天海翼','市来美保','吉沢明歩','仁科百華','Julia','SSNI','Rion','明日花绮罗','桃谷绘里香','冲田杏梨','大桥未久','AIKA']
 #search_list=['IPZ','IPX','IDBD','IPX','AVOP','IPX','SHKD','SSPD','RBD','OFJE','MXSPS','MIBD','SUPD','KAWD','PPT','ABP','PPBD','PBD','BLK','MKMP','JUX','SVDVD']
-search_list=['みづなれい']
+search_list=['OFJE']
 for keys2x in search_list:
 
     url = 'https://www.torrentkitty.tv/search/'
