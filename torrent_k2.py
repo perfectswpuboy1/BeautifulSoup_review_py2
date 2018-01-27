@@ -10,6 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 
 '''
+    说明：本代码不会操作数据库。
     一定要注意从网上粘贴过来的代码需要重新调整一下缩进！！！
     本代码是python2的代码，python3不适用。
     #任务1:筛选文件大小满足条件的文件                                              <<<<<<OK!>>>>>>
