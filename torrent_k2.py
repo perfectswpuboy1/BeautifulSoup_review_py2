@@ -33,7 +33,7 @@ keys2x = raw_input("请输入搜索关键字：")
 
 keyword = urllib.quote(keys2x)  # 这是python2的语法
 
-pages = 20
+pages = 200
 
 # os.chdir('/Users/llm/PycharmProjects/')
 
@@ -45,6 +45,7 @@ ks = file_name
 
 
 for page in range(0, pages):
+    print "当前页面 %s " % page
     page = str(page)
 
     site = url + keyword + '/' + page
