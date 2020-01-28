@@ -37,17 +37,17 @@ def parse_html(html):
     next_page = soup.find('span', attrs={'class': 'next'}).find('a')
     if next_page:
         return movie_name_list, DOWNLOAD_URL + next_page['href']
-    return movie_name_list, None
+    return movie_name_list, None  #返回的是两个参数。第一个参数是电影列表；第二个参数是空。
 
 
 def main():
     url = DOWNLOAD_URL
 
-    with codecs.open('movies', 'wb', encoding='utf-8') as fp:
+    with codecs.open('movies.txt', 'wb', encoding='utf-8') as fp:
         while url:
             html = download_page(url)
-            movies, url = parse_html(html)
-            fp.write(u'{movies}\n'.format(movies='\n'.join(movies)))
+            movies, url = parse_html(html)  #返回的是两个参数。第一个参数是电影列表movies；第二个参数是空。
+            fp.write(u'{movies}'.format(movies='\n'.join(movies))) #Python2.6 开始，新增了一种格式化字符串的函数 str.format()，它增强了字符串格式化的功能。
 
 
 if __name__ == '__main__':

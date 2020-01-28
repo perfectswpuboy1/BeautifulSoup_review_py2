@@ -1,40 +1,15 @@
 # -*- coding: utf-8 -*-
-'''
-    注意：本代码会加入数据库！！！
 
-    一定要注意从网上粘贴过来的代码需要重新调整一下缩进！！！
-    本代码是python2的代码，python3不适用。
-    #任务1:筛选文件大小满足条件的文件                                              <<<<<<OK!>>>>>>
-    #任务2:使用代理，而不是使用全局代理。使得其他软件的使用不受影响。
-    #任务3:根据搜索内容，转换为正常字符，命名文件名保存，而不是每次都是同一个文件名。     <<<<<<OK!>>>>>>
-    #任务4:每20个链接保存一个文件，之后另增加文件保存。                               <<<<<<OK!>>>>>>
-    #任务5:将抓取内容存放到MySQL或者其他简单数据库。Monogodb                         <<<<<<OK!>>>>>>
-    #任务6:增加用户输入，然后搜索用户输入的内容。                                    <<<<<<OK!>>>>>>
-    #任务7:使用beautifulsoup方法实现抓取。实现高级筛选功能。                         <<<<<<OK!>>>>>>
-'''
-
-'''
-	心得：
-	BS的语法确实比xpath更加简洁容易懂，理清思路，分步一步一步循序渐进，就能够得到解决方案。
-
-'''
 import urllib2
 import urllib
 from lxml import etree
-###########################华丽分割线
+
 import codecs
 import requests
 from bs4 import BeautifulSoup
 import pymongo_imp
 
-#[SNIS][MIRD][MILD][PPPD][DPMI][HEYZO][IPTD][MIGD][carib][MXGS][MIAD][WANZ][E-BODY][ONSD][SOE][LAFBD[MIDD][Moodyz][MCB3DBD]
-#[JUFD][MIDE][DPMX][HODV][MIDD]
-#[明日花][神咲詩織][天海翼][市来美保][吉沢明歩][仁科百華][Julia][SSNI][Rion][明日花绮罗][桃谷绘里香][冲田杏梨][大桥未久][AIKA]
-
-#search_list=['SNIS','MIRD','MILD','PPPD','DPMI','HEYZO','IPTD','MIGD','carib','MXGS','MIAD','WANZ','E-BODY','ONSD','SOE','LAFBD','MIDD','Moodyz','MCB3DBD','JUFD','MIDE','DPMX','HODV','MIDD','明日花','神咲詩織','天海翼','市来美保','吉沢明歩','仁科百華','Julia','SSNI','Rion','明日花绮罗','桃谷绘里香','冲田杏梨','大桥未久','AIKA']
-#search_list=['HEYZO','IPTD','MIGD','carib','MXGS','MIAD','WANZ','E-BODY','ONSD','SOE','LAFBD','MIDD','Moodyz','MCB3DBD','JUFD','MIDE','DPMX','HODV','MIDD','明日花','神咲詩織','天海翼','市来美保','吉沢明歩','仁科百華','Julia','SSNI','Rion','明日花绮罗','桃谷绘里香','冲田杏梨','大桥未久','AIKA']
-#search_list=['IPZ','IPX','IDBD','IPX','AVOP','IPX','SHKD','SSPD','RBD','OFJE','MXSPS','MIBD','SUPD','KAWD','PPT','ABP','PPBD','PBD','BLK','MKMP','JUX','SVDVD']
-search_list=['OFJE']
+search_list=['keyword1','keyword2']   #这里建立一个关键字列表，一次性把想要搜索的内容全部搜索一遍，解放你的双手和眼睛。
 for keys2x in search_list:
 
     url = 'https://www.torrentkitty.tv/search/'
@@ -54,12 +29,9 @@ for keys2x in search_list:
         h.add_header('User-Agent',
                  'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.1.14) Gecko/20080404 (FoxPlus) Firefox/2.0.0.14')
 
-        try:
-            ht = urllib2.urlopen(h)
-            #response = urllib2.urlopen(h, timeout=5)
-            #print response.getcode()
-            #print response.geturl()
-            #print response.info()
+        try:      #引入异常处理机制
+            ht = urllib2.urlopen(h)     #网页请求
+         
 
             html = ht.read(ht)
             soup = BeautifulSoup(html, "lxml")                                              #####>>>>>>1     创建美丽汤。
@@ -70,7 +42,7 @@ for keys2x in search_list:
                 search_flag=search_flag+1
                 if search_flag > 1:                                                         #####>>>>>>4.1   设置查找标志，跳过第一个，因为第一个是表头。
                     detail = movie_li.find('td', attrs={'class': 'size'}).getText()         #####>>>>>>5     定位所有的size标签，得到字符串。
-            #上面获取了文件大小。🈶️❕
+            #上面获取了文件大小。
             #print "%s \n" % detail
                     if movie_li.find('a', attrs={'rel': 'magnet'}) is None:
                         pass
@@ -112,21 +84,3 @@ for keys2x in search_list:
 
         except:
             pass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
